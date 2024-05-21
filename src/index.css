@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#FirstPage {
+  height: 820px;
+  background: linear-gradient(150deg, #162746, #53DEF8);
+  display: flex;
+}
+
+#text1 h1 {
+  font-size: 6pc;
+  color: white;
+  font-weight: normal;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  height: 400px;
+  width: 700px;
+  padding: 50px;
+}
+
+#logo {
+  padding: 40px;
+  size: 20cap;
+  height: 150px;
+}
+
+#phone {
+  height: 700px;
+  padding-top: 30px;
+  padding-left: 50px;
+  position: relative; 
+}
+
+#GooglePlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%);
+  height: 50px;
+  margin-left:-200px;
+  padding-bottom: 60px;
+}
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #4AA971;
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: #162847;
+  color: white;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-family: "League Spartan", sans-serif;
+}
+
+.text-2 {
+  font-weight: 900;
+  font-family: "League Spartan", sans-serif;
+}
+
+button {
+  --primary-color: #4AA971;
+  --secondary-color: #fff;
+  --hover-color: #162847;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  justify-content: center; 
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+
+button{
+  margin-left: 100px;
+  margin-bottom: 150px;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+#SecondPage{
+  height: 800px;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+#text{
+  width: 700px;
+}
+#text h1  {
+  font-size: 3pc;
+  color: #13B1B4;
+  font-weight: normal;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 600px;
+  padding-top: 80px;
+  padding-left:40px;
+}
+
+#text h2{
+  font-size: 2pc;
+  color: #1D84C5;
+  font-weight: normal;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: 600px;
+  padding-top: 10px;
+  padding-left:390px;
+}
+
+#paragraphe{
+  width: 500px;
+  padding-left: 90px;
+  padding-top: 120px;
+}
+#paragraphe p{
+  font-weight: normal;
+  font-size: larger;
+  font-family: "League Spartan", sans-serif;
+}
+#pic {
+  width: 800px;
+
+}
+#pic img{
+  height: 662px;
+}
+
+#ThirdPage{
+  height: 800px;
+}
+#BigTitle{
+  height: 50%;
+  display: flex;
+}
+#BigTitle h1{
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+  font-size: larger;
+  font-size:70px;
+  color: #13B1B4;
+  width: 500px;
+
+}
+#BigTitle h2{
+  color: #1D84C5;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 100;
+  margin-top: 30px;
+  margin-right:50px ;
+}
+
+#Grid {
+  display: flex;
+  height: 50%;
+}
+
+.grid-item {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+
+}
+.grid-item:hover {
+  background-color: #103A5E;
+}
+.grid-item:hover p {
+    color: white;
+  }
+
+
+.extremity {
+  background-color: #0B1A43;
+}
+.extremity:hover{
+  background-color: #103A5E;
+}
+.extremity:hover p{
+  color: #20b2aa ;
+}
+.extremity p{
+  color: white;
+  font-family: "League Spartan", sans-serif;
+  padding-top: 40px;
+  font-size: larger;
+  width: 400px;
+  padding-top: 90px;
+}
+.middle {
+  background-color: #071432;
+}
+.middle p{
+  color: #00C4CC;
+  font-family: "League Spartan", sans-serif;
+  padding-top: 40px;
+  font-size: larger;
+  width: 400px;
+  padding-top: 90px;
+
+}
+#circle{
+  height: 60px;
+  width: 60px;
+  background-color: #00C4CC;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-size: larger;
+  margin: 20px;
+}
+.grid-item:hover #circle{
+  background-color: white;
+}
+
+
+#FourthPage {
+  height: 820px;
+  background: linear-gradient(150deg, #06C0C9, #0B1D46);
+  display: flex;
+  justify-content: center;
+}  
+
+#FourthPage h1 {
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 80px;
+  font-weight: normal;
+  color: white;
+  padding-top: 150px;
+}
+#FourthPage h2{
+  color: #DFDE41;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  justify-content: end;
+  font-weight: normal;
+  font-size: 40px;
+  width: 1000px;
+}
+#parts {
+  display: grid; 
+  padding-top:150px ;
+  grid-template-columns: repeat(4, 1fr);
+  height: 200px; 
+  width: 1400px;
+  gap: 10px; 
+  margin-top: 100px;
+}
+
+
+.part {
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+}
+.part img{
+  height: 50px;
+}
+.part p{
+  padding: 40px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 20px;
+  width: 90%;
+  color: #4CD0EA;
+  font-weight: 200;
+}
+.part:hover {
+  background-color: #0B1A43;
+  border-radius: 30px;
+}
+
+.part:hover p {
+  color: white;
+}
+
+.contact-section {
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 66px;
+  background-color: #142140;
+}
+
+.contact-info {
+  background-color: #0C1837; 
+  padding: 40px;
+  border-radius: 50px;
+  width: 400px;
+  height:500px; 
+}
+
+.contact-info h1 {
+  color: #70D3ED; 
+  margin-bottom: 20px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 3pc;
+  font-weight: 400;
+
+}
+
+.contact-item {
+  background-color: #fff;
+  color: #0C1837;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding-top: 55px;
+  font-family: "League Spartan", sans-serif;
+
+
+}
+
+.contact-item h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.contact-item.follow-us {
+  background-color: #70D3ED; 
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 40px;
+}
+.social-icons a:hover img {
+  filter: brightness(0.8);
+}
+.contact-logo {
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.contact-logo img {
+  width: 300px;
+}
+  
+.contact-item:hover {
+  background-color: #142140;
+  color: #fff;
+}
+
+.contact-item.follow-us:hover {
+  background-color: #fff;
+  color: #70D3ED;
+}
+
+/* Animation pour les éléments de la première page */
+#text1 h1,
+#logo,
+#phone,
+#GooglePlay,
+button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animation pour les éléments de la section de contact */
+.contact-info,
+.contact-item,
+.social-icons,
+.contact-logo {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.5s ease forwards;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
