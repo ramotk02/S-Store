@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import logo from './assets/image3.svg';
-import logo2 from "./assets/logo2.svg";
 import phone from './assets/Layer 1.svg';
-import googleplay from './assets/playgoogle.svg';
-import all from './assets/Background.svg';
+import all from './assets/all2.svg';
 import compte from './assets/account.svg';
 import truck from './assets/camion.svg';
 import bag from './assets/sac.svg';
@@ -185,7 +183,7 @@ function App() {
           </div>
         </div>
         <div className="contact-logo">
-          <img src={logo2} alt="S-Souk Logo" />
+          <img src={ss} alt="S-Souk Logo" />
         </div>
       </section>
     </section>
