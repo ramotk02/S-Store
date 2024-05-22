@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@
   font-size: 6pc;
   color: white;
   font-weight: normal;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   height: 400px;
@@ -80,12 +81,12 @@
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .text-2 {
   font-weight: 900;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 button {
@@ -169,7 +170,7 @@ button:hover .arrow:before {
   font-size: 3pc;
   color: #13B1B4;
   font-weight: normal;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   width: 600px;
@@ -181,7 +182,7 @@ button:hover .arrow:before {
   font-size: 2pc;
   color: #1D84C5;
   font-weight: normal;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   width: 600px;
@@ -197,7 +198,7 @@ button:hover .arrow:before {
 #paragraphe p{
   font-weight: normal;
   font-size: larger;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 #pic {
   width: 800px;
@@ -215,7 +216,8 @@ button:hover .arrow:before {
   display: flex;
 }
 #BigTitle h1{
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 40px;
   font-weight: 200;
   font-size: larger;
   font-size:70px;
@@ -225,7 +227,7 @@ button:hover .arrow:before {
 }
 #BigTitle h2{
   color: #1D84C5;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin-top: 30px;
   margin-right:50px ;
@@ -261,7 +263,7 @@ button:hover .arrow:before {
 }
 .extremity p{
   color: white;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 40px;
   font-size: larger;
   width: 400px;
@@ -272,7 +274,7 @@ button:hover .arrow:before {
 }
 .middle p{
   color: #00C4CC;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-top: 40px;
   font-size: larger;
   width: 400px;
@@ -287,7 +289,7 @@ button:hover .arrow:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: larger;
   margin: 20px;
 }
@@ -304,7 +306,7 @@ button:hover .arrow:before {
 }  
 
 #FourthPage h1 {
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
   padding-top: 40px;
@@ -315,7 +317,7 @@ button:hover .arrow:before {
 }
 #FourthPage h2{
   color: #DFDE41;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: end;
   font-weight: normal;
@@ -343,7 +345,7 @@ button:hover .arrow:before {
 }
 .part p{
   padding: 40px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   width: 90%;
   color: #4CD0EA;
@@ -377,7 +379,7 @@ button:hover .arrow:before {
 .contact-info h1 {
   color: #70D3ED; 
   margin-bottom: 20px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3pc;
   font-weight: 400;
 
@@ -390,7 +392,7 @@ button:hover .arrow:before {
   margin-bottom: 10px;
   border-radius: 4px;
   padding-top: 55px;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Open Sans", sans-serif;
 
 
 }

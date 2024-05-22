@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from './assets/image3.svg';
+import logo2 from "./assets/ss-transformed.png";
 import phone from './assets/Layer 1.svg';
 import all from './assets/all2.svg';
 import compte from './assets/account.svg';
@@ -183,7 +184,7 @@ function App() {
           </div>
         </div>
         <div className="contact-logo">
-          <img src={ss} alt="S-Souk Logo" />
+          <img src={logo2} alt="S-Souk Logo" />
         </div>
       </section>
     </section>
