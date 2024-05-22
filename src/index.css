@@ -213,7 +213,12 @@ button:hover .arrow:before {
 }
 #BigTitle{
   height: 50%;
+}
+#Fp{
   display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width:600px;
 }
 #BigTitle h1{
   font-family: "Open Sans", sans-serif;
@@ -222,15 +227,16 @@ button:hover .arrow:before {
   font-size: larger;
   font-size:70px;
   color: #13B1B4;
-  width: 500px;
-
+  
 }
+
 #BigTitle h2{
   color: #1D84C5;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin-top: 30px;
-  margin-right:50px ;
+  width: 200px;
+  height: 50px;
 }
 
 #Grid {

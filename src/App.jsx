@@ -106,12 +106,15 @@ function App() {
 
       <section id="ThirdPage">
         <div id="BigTitle">
-          <div>
+          <div id='Fp'>
             <h1>Pourquoi </h1>
-            <h1>choisir S-souk?</h1>
+            <h2>Ghadi Yhenik !</h2>
+
           </div>
-          <h2>Ghadi Yhenik !</h2>
+          <h1>choisir S-souk?</h1>
+
         </div>
+
 
         <div id="Grid">
           <div className="grid-item extremity">
