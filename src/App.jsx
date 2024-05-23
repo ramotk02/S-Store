@@ -12,45 +12,38 @@ import twitterIcon from './assets/x.svg';
 import instagramIcon from './assets/insta.svg';
 
 function App() {
-  function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  function animateOnScroll() {
-    var elementsToAnimate = document.querySelectorAll('#text1, #logo, #phone, #GooglePlay, button, .contact-info, .contact-item, .social-icons, .contact-logo');
-    elementsToAnimate.forEach(function(element) {
-      if (isElementInViewport(element)) {
-        element.style.opacity = '1';
-        element.style.transform = 'translateY(0)';
-      }
-    });
-  }
-
   useEffect(() => {
-    window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll();
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.5, 
+      }
+    );
+  
+    const elementsToAnimate = document.querySelectorAll('.animatable');
+    elementsToAnimate.forEach(element => observer.observe(element));
 
     return () => {
-      window.removeEventListener('scroll', animateOnScroll);
+      elementsToAnimate.forEach(element => observer.unobserve(element));
     };
   }, []);
 
   return (
-    <section id="BigSecction">
+    <section id="BigSection">
       <section id="FirstPage">
         <div>
-          <img id="logo" src={logo} alt="logo" />
-          <div id="text1">
+          <img id="logo" src={logo} alt="logo" className="animatable" />
+          <div id="text1" className="animatable">
             <h1>CHRI, W GHIIIR MN BLASTEK!</h1>
           </div>
-          <div className="button2">
-            <button>
+          <div className="button2 animatable">
+            <button className="animatable">
               <h2>Télécharger l'application</h2>
               <div className="arrow-wrapper">
                 <div className="arrow"></div>
@@ -58,22 +51,24 @@ function App() {
             </button>
           </div>
         </div>
-        <div id="phone">
+        <div id="phone" className="animatable">
           <img id="phone" src={phone} alt="phone" />
-          <div id='GooglePlay'><a class="playstore-button" href="#">
-  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
-    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
-  </svg>
-  <span class="texts">
-    <span class="text-1">GET IT ON</span>
-    <span class="text-2">Google Play</span>
-  </span>
-            </a></div>
+          <div id='GooglePlay' className="animatable">
+            <a className="playstore-button" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="icon" viewBox="0 0 512 512">
+                <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+              </svg>
+              <span className="texts">
+                <span className="text-1">GET IT ON</span>
+                <span className="text-2">Google Play</span>
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
       <section id="SecondPage">
-        <div id="text">
+        <div id="text" className="animatable">
           <h1>Qu'est-ce que S-souk?</h1>
           <h2>Blan mriguel!</h2>
           <div id="paragraphe">
@@ -99,66 +94,56 @@ function App() {
             </p>
           </div>
         </div>
-        <div id="pic">
+        <div id="pic" className="animatable">
           <img src={all} alt="all" />
         </div>
       </section>
 
       <section id="ThirdPage">
-        <div id="BigTitle">
+        <div id="BigTitle" className="animatable">
           <div id='Fp'>
             <h1>Pourquoi </h1>
             <h2>Ghadi Yhenik !</h2>
-
           </div>
           <h1>choisir S-souk?</h1>
-
         </div>
 
-
         <div id="Grid">
-          <div className="grid-item extremity">
+          <div className="grid-item extremity animatable">
             <div id="circle">01</div>
             <p>Interface simple et descriptions de produits claires</p>
           </div>
-
-          <div class="grid-item middle">
+          <div className="grid-item middle animatable">
             <div id="circle">02</div>
-            <p>
-              Les revendeurs sont informés en temps réel (notifications push)
-            </p>
+            <p>Les revendeurs sont informés en temps réel (notifications push)</p>
           </div>
-
-          <div className="grid-item extremity">
+          <div className="grid-item extremity animatable">
             <div id="circle">03</div>
-            <p>
-              La livraison se fait directement à votre point de vente dans des
-              délais rapides
-            </p>
+            <p>La livraison se fait directement à votre point de vente dans des délais rapides</p>
           </div>
         </div>
       </section>
 
       <section id="FourthPage">
-        <div>
-          <div >
+        <div className="animatable">
+          <div>
             <h1>Comment ça marche</h1>
             <h2>SaaaaaaheL!</h2>
           </div>
           <div id="parts">
-            <div className="part">
+            <div className="part animatable">
               <img src={compte} alt="account" />
               <p>Inscrivez-vous et obtenez l'accès à votre application mobile.</p>
             </div>
-            <div className="part">
+            <div className="part animatable">
               <img src={bag} alt="bag" />
               <p>Découvrez nos produits et ajoutez-les à votre panier d'achats.</p>
             </div>
-            <div className="part">
+            <div className="part animatable">
               <img src={cash} alt="cash" />
               <p>Sélectionnez votre méthode de paiement, puis confirmez-la.</p>
             </div>
-            <div className="part">
+            <div className="part animatable">
               <img src={truck} alt="truck" />
               <p>S-souk s’occupe de tout ! Votre commande et de la livraison.</p>
             </div>
@@ -167,26 +152,26 @@ function App() {
       </section>
 
       <section className="contact-section">
-        <div className="contact-info">
+        <div className="contact-info animatable">
           <h1>Contact</h1>
-          <div className="contact-item">
+          <div className="contact-item animatable">
             <h2>Téléphone</h2>
             <p>(212) 656-7890</p>
           </div>
-          <div className="contact-item">
+          <div className="contact-item animatable">
             <h2>Email</h2>
             <p>contact@ssouk.com</p>
           </div>
-          <div className="contact-item follow-us">
+          <div className="contact-item follow-us animatable">
             <h2>Nous suivre</h2>
-            <div className="social-icons">
+            <div className="social-icons animatable">
               <a href="#"><img src={facebookIcon} alt="Facebook" /></a>
               <a href="#"><img src={twitterIcon} alt="Twitter" /></a>
               <a href="#"><img src={instagramIcon} alt="Instagram" /></a>
             </div>
           </div>
         </div>
-        <div className="contact-logo">
+        <div className="contact-logo animatable">
           <img src={logo2} alt="S-Souk Logo" />
         </div>
       </section>

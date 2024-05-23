@@ -476,7 +476,6 @@ button {
     transform: translateY(0);
   }
 }
-/* Animation pour les éléments de la section de contact */
 .contact-info,
 .contact-item,
 .social-icons,
@@ -490,5 +489,15 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+/* État initial : l'élément est invisible et légèrement décalé vers le bas */
+.animatable {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.5s ease; /* Animation de 1.5 secondes */
+}
 
-
+/* État final : l'élément est visible et à sa position originale */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
