@@ -201,7 +201,6 @@ button:hover .arrow:before {
   font-family: "Open Sans", sans-serif;
 }
 #pic {
-  width: 800px;
 
 }
 #pic img{
@@ -328,7 +327,8 @@ button:hover .arrow:before {
   justify-content: end;
   font-weight: normal;
   font-size: 40px;
-  width: 1000px;
+  width: 1300px;
+
 }
 #parts {
   display: grid; 
@@ -336,8 +336,8 @@ button:hover .arrow:before {
   grid-template-columns: repeat(4, 1fr);
   height: 200px; 
   width: 1400px;
-  gap: 10px; 
-  margin-top: 100px;
+  gap:5px; 
+  margin-top: 0px;
 }
 
 
