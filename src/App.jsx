@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import logo from './assets/image3.svg';
 import logo2 from "./assets/ss-transformed.png";
@@ -71,7 +70,7 @@ function App() {
       <section id="SecondPage">
         <div id="text" className="animatable">
           <h1>Qu'est-ce que S-souk?</h1>
-          <h2 className="slideInLeft">Blan Mriiiiguel!!</h2>
+          <h2 className=" slideInFromRight">Blan Mriiiiguel!!</h2>
           <div id="paragraphe">
             <p>
               S-SOUK est une plateforme en ligne de vente en gros qui permet
@@ -104,7 +103,7 @@ function App() {
         <div id="BigTitle" className="animatable">
           <div id='Fp'>
             <h1>Pourquoi </h1>
-            <h2 className="slideInFromLeft animatable">Ghadi Yhenik !</h2>
+            <h2 className="slideInFromRight animatable">Ghadi Yhenik !</h2>
           </div>
           <h1>choisir S-souk?</h1>
         </div>
@@ -129,7 +128,7 @@ function App() {
         <div className="animatable">
           <div>
             <h1>Comment ça marche</h1>
-            <h2 className="slideInFromLeft animatable">SaaaaaaheL!</h2>
+            <h2 className="slideInFromRight animatable">SaaaaaaheL!</h2>
 
           </div>
           <div id="parts">
