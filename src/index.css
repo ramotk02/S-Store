@@ -502,6 +502,10 @@ button {
 
 
 
+.visible .slideInFromRight {
+  animation: slideInFromRight 1s ease-out;
+}
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
@@ -513,7 +517,4 @@ button {
   }
 }
 
-.slideInFromRight {
-  animation: slideInFromRight 1s ease-out;
-}
 
