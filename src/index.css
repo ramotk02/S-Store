@@ -350,12 +350,12 @@ button:hover .arrow:before {
   height: 50px;
 }
 .part p{
-  padding: 40px;
+  padding: 20px;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 19px;
   width: 90%;
   color: #4CD0EA;
-  font-weight: 200;
+  font-weight: 100;
 }
 .part:hover {
   background-color: #0B1A43;
@@ -455,7 +455,7 @@ button:hover .arrow:before {
   color: #70D3ED;
 }
 
-/* Animation pour les éléments de la première page */
+/* Annimations */
 #text1 h1,
 #logo,
 #phone,
@@ -465,6 +465,24 @@ button {
   transform: translateY(20px);
   animation: slideIn 0.5s ease forwards;
 }
+
+#logo {
+  animation-delay: 0.2s; 
+}
+#text1 h1{  
+  animation-delay: 0.5s; 
+}
+
+
+#phone {
+  animation-delay: 0.8s; 
+}
+
+#GooglePlay {
+  animation-delay: 0.9s; 
+}
+
+
 
 @keyframes slideIn {
   from {
@@ -503,7 +521,7 @@ button {
 
 
 .visible .slideInFromRight {
-  animation: slideInFromRight 1s ease-out;
+  animation: slideInFromRight 2s ease-out;
 }
 
 @keyframes slideInFromRight {

@@ -132,7 +132,7 @@ function App() {
       <section id="FourthPage">
         <div className="animatable">
           <div>
-            <h1>Comment ça marche</h1>
+            <h1>Comment ça marche ?</h1>
             <h2 className="slideInFromRight animatable">SaaaaaaheL!</h2>
 
           </div>
@@ -162,7 +162,7 @@ function App() {
           <h1>Contact</h1>
           <div className="contact-item animatable">
             <h2>Téléphone</h2>
-            <p>(212) 656-7890</p>
+            <p>(+212) 656-7890</p>
           </div>
           <div className="contact-item animatable">
             <h2>Email</h2>
