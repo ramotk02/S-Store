@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 
 #FirstPage {
   height: 820px;
-  background: linear-gradient(150deg, #162746, #53DEF8);
+  background: linear-gradient(150deg, #162746, #53def8);
   display: flex;
 }
 
@@ -33,16 +33,16 @@
   height: 700px;
   padding-top: 30px;
   padding-left: 50px;
-  position: relative; 
+  position: relative;
 }
 
 #GooglePlay {
   position: absolute;
   bottom: 0;
-  left: 50%; 
+  left: 50%;
   transform: translateX(-50%);
   height: 50px;
-  margin-left:-200px;
+  margin-left: -200px;
   padding-bottom: 60px;
 }
 .playstore-button {
@@ -50,12 +50,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
-  background-color: #4AA971;
+  background-color: #4aa971;
   padding: 0.625rem 1.5rem;
   text-align: center;
   color: rgba(255, 255, 255, 1);
   outline: 0;
-  transition: all  .2s ease;
+  transition: all 0.2s ease;
   text-decoration: none;
 }
 
@@ -90,7 +90,7 @@
 }
 
 button {
-  --primary-color: #4AA971;
+  --primary-color: #4aa971;
   --secondary-color: #fff;
   --hover-color: #162847;
   --arrow-width: 10px;
@@ -104,13 +104,12 @@ button {
   display: flex;
   transition: 0.2s background;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 0.6em;
   font-weight: bold;
 }
 
-
-button{
+button {
   margin-left: 100px;
   margin-bottom: 150px;
 }
@@ -156,81 +155,79 @@ button:hover .arrow:before {
   right: 0;
 }
 
-#SecondPage{
+#SecondPage {
   height: 800px;
   display: flex;
   display: flex;
   justify-content: space-between;
 }
 
-#text{
+#text {
   width: 700px;
 }
-#text h1  {
+#text h1 {
   font-size: 3pc;
-  color: #13B1B4;
+  color: #13b1b4;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   width: 600px;
   padding-top: 80px;
-  padding-left:40px;
+  padding-left: 40px;
 }
 
-#text h2{
+#text h2 {
   font-size: 2pc;
-  color: #1D84C5;
+  color: #1d84c5;
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   width: 600px;
   padding-top: 10px;
-  padding-left:390px;
+  padding-left: 390px;
 }
 
-#paragraphe{
+#paragraphe {
   width: 500px;
   padding-left: 90px;
   padding-top: 120px;
 }
-#paragraphe p{
+#paragraphe p {
   font-weight: normal;
   font-size: larger;
   font-family: "Open Sans", sans-serif;
 }
 #pic {
-
 }
-#pic img{
+#pic img {
   height: 662px;
 }
 
-#ThirdPage{
+#ThirdPage {
   height: 800px;
 }
-#BigTitle{
+#BigTitle {
   height: 50%;
 }
-#Fp{
+#Fp {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  width:900px;
+  width: 900px;
 }
-#BigTitle h1{
+#BigTitle h1 {
   font-family: "Open Sans", sans-serif;
   padding-left: 40px;
   font-weight: 200;
   font-size: larger;
-  font-size:70px;
-  color: #13B1B4;
-  
+  font-size: 70px;
+  color: #13b1b4;
 }
 
-#BigTitle h2{
-  color: #1D84C5;
+#BigTitle h2 {
+  color: #1d84c5;
   font-family: "Open Sans", sans-serif;
   font-weight: 200;
   font-size: 30px;
@@ -247,26 +244,24 @@ button:hover .arrow:before {
   flex: 1;
   padding: 20px;
   text-align: center;
-
 }
 .grid-item:hover {
-  background-color: #103A5E;
+  background-color: #103a5e;
 }
 .grid-item:hover p {
-    color: white;
-  }
-
+  color: white;
+}
 
 .extremity {
-  background-color: #0B1A43;
+  background-color: #0b1a43;
 }
-.extremity:hover{
-  background-color: #103A5E;
+.extremity:hover {
+  background-color: #103a5e;
 }
-.extremity:hover p{
-  color: #20b2aa ;
+.extremity:hover p {
+  color: #20b2aa;
 }
-.extremity p{
+.extremity p {
   color: white;
   font-family: "Open Sans", sans-serif;
   padding-top: 40px;
@@ -277,19 +272,18 @@ button:hover .arrow:before {
 .middle {
   background-color: #071432;
 }
-.middle p{
-  color: #00C4CC;
+.middle p {
+  color: #00c4cc;
   font-family: "Open Sans", sans-serif;
   padding-top: 40px;
   font-size: larger;
   width: 400px;
   padding-top: 90px;
-
 }
-#circle{
+#circle {
   height: 60px;
   width: 60px;
-  background-color: #00C4CC;
+  background-color: #00c4cc;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -298,17 +292,16 @@ button:hover .arrow:before {
   font-size: larger;
   margin: 20px;
 }
-.grid-item:hover #circle{
+.grid-item:hover #circle {
   background-color: white;
 }
 
-
 #FourthPage {
   height: 820px;
-  background: linear-gradient(150deg, #06C0C9, #0B1D46);
+  background: linear-gradient(150deg, #06c0c9, #0b1d46);
   display: flex;
   justify-content: center;
-}  
+}
 
 #FourthPage h1 {
   font-family: "Open Sans", sans-serif;
@@ -320,45 +313,43 @@ button:hover .arrow:before {
   color: white;
   padding-top: 150px;
 }
-#FourthPage h2{
-  color: #DFDE41;
+#FourthPage h2 {
+  color: #dfde41;
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: end;
   font-weight: normal;
   font-size: 40px;
   width: 1300px;
-
 }
 #parts {
-  display: grid; 
-  padding-top:150px ;
+  display: grid;
+  padding-top: 150px;
   grid-template-columns: repeat(4, 1fr);
-  height: 200px; 
+  height: 200px;
   width: 1400px;
-  gap:5px; 
+  gap: 5px;
   margin-top: 0px;
 }
-
 
 .part {
   justify-content: start;
   align-items: start;
   padding: 10px;
 }
-.part img{
+.part img {
   height: 50px;
 }
-.part p{
+.part p {
   padding: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 19px;
   width: 90%;
-  color: #4CD0EA;
+  color: #4cd0ea;
   font-weight: 100;
 }
 .part:hover {
-  background-color: #0B1A43;
+  background-color: #0b1a43;
   border-radius: 30px;
 }
 
@@ -375,32 +366,29 @@ button:hover .arrow:before {
 }
 
 .contact-info {
-  background-color: #0C1837; 
+  background-color: #0c1837;
   padding: 40px;
   border-radius: 50px;
   width: 400px;
-  height:500px; 
+  height: 500px;
 }
 
 .contact-info h1 {
-  color: #70D3ED; 
+  color: #70d3ed;
   margin-bottom: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 3pc;
   font-weight: 400;
-
 }
 
 .contact-item {
   background-color: #fff;
-  color: #0C1837;
+  color: #0c1837;
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 4px;
   padding-top: 55px;
   font-family: "Open Sans", sans-serif;
-
-
 }
 
 .contact-item h2 {
@@ -414,7 +402,7 @@ button:hover .arrow:before {
 }
 
 .contact-item.follow-us {
-  background-color: #70D3ED; 
+  background-color: #70d3ed;
   text-align: center;
 }
 
@@ -444,7 +432,7 @@ button:hover .arrow:before {
 .contact-logo img {
   width: 300px;
 }
-  
+
 .contact-item:hover {
   background-color: #142140;
   color: #fff;
@@ -452,7 +440,7 @@ button:hover .arrow:before {
 
 .contact-item.follow-us:hover {
   background-color: #fff;
-  color: #70D3ED;
+  color: #70d3ed;
 }
 
 /* Annimations */
@@ -467,22 +455,19 @@ button {
 }
 
 #logo {
-  animation-delay: 0.2s; 
+  animation-delay: 0.2s;
 }
-#text1 h1{  
-  animation-delay: 0.5s; 
+#text1 h1 {
+  animation-delay: 0.5s;
 }
-
 
 #phone {
-  animation-delay: 0.8s; 
+  animation-delay: 0.8s;
 }
 
 #GooglePlay {
-  animation-delay: 0.9s; 
+  animation-delay: 0.9s;
 }
-
-
 
 @keyframes slideIn {
   from {
@@ -518,8 +503,6 @@ button {
   transform: translateY(0);
 }
 
-
-
 .visible .slideInFromRight {
   animation: slideInFromRight 2s ease-out;
 }
@@ -534,5 +517,3 @@ button {
     opacity: 1;
   }
 }
-
-
