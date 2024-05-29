@@ -17,9 +17,7 @@ function App() {
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.querySelectorAll('.animatable').forEach(element => {
-              element.classList.add('visible');
-            });
+            entry.target.classList.add('visible');
           }
         });
       },
@@ -28,11 +26,11 @@ function App() {
       }
     );
   
-    const sectionsToAnimate = document.querySelectorAll('section');
-    sectionsToAnimate.forEach(section => observer.observe(section));
+    const elementsToAnimate = document.querySelectorAll('.animatable');
+    elementsToAnimate.forEach(element => observer.observe(element));
   
     return () => {
-      sectionsToAnimate.forEach(section => observer.unobserve(section));
+      elementsToAnimate.forEach(element => observer.unobserve(element));
     };
   }, []);
   

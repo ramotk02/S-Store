@@ -6,6 +6,7 @@
 
 #FirstPage {
   height: 820px;
+  width: 100%;
   background: linear-gradient(150deg, #162746, #53def8);
   display: flex;
 }
@@ -430,7 +431,7 @@ button:hover .arrow:before {
 }
 
 .contact-logo img {
-  width: 300px;
+  width: 300px ;
 }
 
 .contact-item:hover {
@@ -442,6 +443,9 @@ button:hover .arrow:before {
   background-color: #fff;
   color: #70d3ed;
 }
+
+
+
 
 /* Annimations */
 #text1 h1,
@@ -495,7 +499,7 @@ button {
 .animatable {
   opacity: 0;
   transform: translateY(20px);
-  transition: all 1.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .visible {
@@ -517,3 +521,9 @@ button {
     opacity: 1;
   }
 }
+
+
+
+
+
+
